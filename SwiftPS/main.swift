@@ -10,16 +10,17 @@ import Foundation
 let C = Int(readLine()!)!
 
 for _ in 0..<C {
-    let input = readLine()!.split(separator: " ").map() { Int($0)! }
+    let input = readLine()!.split(separator: " ").map() { Double($0)! }
     var avg: Double = 0
     var count: Double = 0
     
-    for i in 1..<input.count { avg += Double(input[i]) }
-    avg /= Double(input[0])
+    for i in 1..<input.count { avg += input[i] }
+    avg /= input[0]
     
     for i in 1..<input.count {
-        if Double(input[i]) > avg { count += 1 }
+        if input[i] > avg { count += 1 }
     }
     
-    print("\(count / Double(input[0]) * 100)%")
+    let percentage: Double = count / input[0] * 100
+    print(String(format: "%.3f", percentage) + "%")
 }
