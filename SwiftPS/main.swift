@@ -7,20 +7,17 @@
 
 import Foundation
 
-let C = Int(readLine()!)!
+let K = Int(readLine()!)!
+var arr: [Int] = []
 
-for _ in 0..<C {
-    let input = readLine()!.split(separator: " ").map() { Double($0)! }
-    var avg: Double = 0
-    var count: Double = 0
+for _ in 0..<K {
+    let input = Int(readLine()!)!
     
-    for i in 1..<input.count { avg += input[i] }
-    avg /= input[0]
-    
-    for i in 1..<input.count {
-        if input[i] > avg { count += 1 }
-    }
-    
-    let percentage: Double = count / input[0] * 100
-    print(String(format: "%.3f", percentage) + "%")
+    if input == 0 { arr.removeLast() }
+    else { arr.append(input) }
 }
+
+var sum: Int = 0
+for i in 0..<arr.count { sum += arr[i] }
+
+print(sum)

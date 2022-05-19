@@ -26,6 +26,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3600AA842836594800BA9A9E /* 2577.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2577.swift; sourceTree = "<group>"; };
+		3600AA86283669F800BA9A9E /* 3052.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3052.swift; sourceTree = "<group>"; };
+		3600AA88283670FB00BA9A9E /* 2753.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2753.swift; sourceTree = "<group>"; };
+		3600AA8A2836747600BA9A9E /* 2480.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2480.swift; sourceTree = "<group>"; };
+		3600AA8C2836749700BA9A9E /* 2884.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2884.swift; sourceTree = "<group>"; };
 		361911422832C37B005AF1E4 /* 1110.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1110.swift; sourceTree = "<group>"; };
 		361A6223283557F800D9A038 /* 4344.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4344.swift; sourceTree = "<group>"; };
 		3625BC972831397F0099A5A0 /* 10818.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10818.swift; sourceTree = "<group>"; };
@@ -35,6 +40,8 @@
 		367432492831005E007DA511 /* 2798.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2798.swift; sourceTree = "<group>"; };
 		3674324B28310069007DA511 /* 10773.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10773.swift; sourceTree = "<group>"; };
 		3674324D2831006D007DA511 /* 10828.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10828.swift; sourceTree = "<group>"; };
+		36A73BF32836823B0048B94A /* 4673.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4673.swift; sourceTree = "<group>"; };
+		36A73BF6283682E10048B94A /* 11654.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11654.swift; sourceTree = "<group>"; };
 		36BB4C4F2831EDAF00194F58 /* 1003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1003.swift; sourceTree = "<group>"; };
 		36BB4C522831F17F00194F58 /* 1546.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1546.swift; sourceTree = "<group>"; };
 		36C2E9B528326F3C007F16E0 /* 2525.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2525.swift; sourceTree = "<group>"; };
@@ -67,6 +74,8 @@
 				36BB4C522831F17F00194F58 /* 1546.swift */,
 				36C2E9B7283270BF007F16E0 /* 2562.swift */,
 				3625BC972831397F0099A5A0 /* 10818.swift */,
+				3600AA842836594800BA9A9E /* 2577.swift */,
+				3600AA86283669F800BA9A9E /* 3052.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -92,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				3625BC9D28313EF10099A5A0 /* 1065.swift */,
+				36A73BF32836823B0048B94A /* 4673.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -124,6 +134,7 @@
 		367432482831003D007DA511 /* BOJ */ = {
 			isa = PBXGroup;
 			children = (
+				36A73BF5283682D60048B94A /* String */,
 				361911442832C386005AF1E4 /* Loop */,
 				36C2E9B428326F33007F16E0 /* Condition */,
 				3625BC99283139A40099A5A0 /* Array */,
@@ -133,6 +144,14 @@
 				36BB4C4E2831EDA400194F58 /* DynamicProgramming */,
 			);
 			path = BOJ;
+			sourceTree = "<group>";
+		};
+		36A73BF5283682D60048B94A /* String */ = {
+			isa = PBXGroup;
+			children = (
+				36A73BF6283682E10048B94A /* 11654.swift */,
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 		36BB4C4E2831EDA400194F58 /* DynamicProgramming */ = {
@@ -147,6 +166,9 @@
 			isa = PBXGroup;
 			children = (
 				36C2E9B528326F3C007F16E0 /* 2525.swift */,
+				3600AA88283670FB00BA9A9E /* 2753.swift */,
+				3600AA8A2836747600BA9A9E /* 2480.swift */,
+				3600AA8C2836749700BA9A9E /* 2884.swift */,
 			);
 			path = Condition;
 			sourceTree = "<group>";
