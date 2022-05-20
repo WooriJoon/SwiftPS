@@ -7,17 +7,8 @@
 
 import Foundation
 
-let K = Int(readLine()!)!
-var arr: [Int] = []
+let input = readLine()!.split(separator: " ").map() { Int($0)! }
+let A = input[0]
+let B = input[1]
+let V = input[2]
 
-for _ in 0..<K {
-    let input = Int(readLine()!)!
-    
-    if input == 0 { arr.removeLast() }
-    else { arr.append(input) }
-}
-
-var sum: Int = 0
-for i in 0..<arr.count { sum += arr[i] }
-
-print(sum)
