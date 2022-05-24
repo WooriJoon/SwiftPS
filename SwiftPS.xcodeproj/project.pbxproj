@@ -40,6 +40,8 @@
 		367432492831005E007DA511 /* 2798.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2798.swift; sourceTree = "<group>"; };
 		3674324B28310069007DA511 /* 10773.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10773.swift; sourceTree = "<group>"; };
 		3674324D2831006D007DA511 /* 10828.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10828.swift; sourceTree = "<group>"; };
+		3687D2A5283D184900AD9046 /* 가장 큰 정사각형 찾기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "가장 큰 정사각형 찾기.swift"; sourceTree = "<group>"; };
+		3687D2A9283D1AA500AD9046 /* 방문 길이.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "방문 길이.swift"; sourceTree = "<group>"; };
 		36A36F73283A7ED3004A5D30 /* 1978.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1978.swift; sourceTree = "<group>"; };
 		36A36F75283A83D9004A5D30 /* 11653.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11653.swift; sourceTree = "<group>"; };
 		36A73BF32836823B0048B94A /* 4673.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4673.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			children = (
 				3674324128310035007DA511 /* main.swift */,
 				367432482831003D007DA511 /* BOJ */,
+				3687D2A4283CE6F700AD9046 /* Programmers */,
 			);
 			path = SwiftPS;
 			sourceTree = "<group>";
@@ -166,6 +169,31 @@
 				36CBBD182838B023009BC471 /* Queue */,
 			);
 			path = BOJ;
+			sourceTree = "<group>";
+		};
+		3687D2A4283CE6F700AD9046 /* Programmers */ = {
+			isa = PBXGroup;
+			children = (
+				3687D2A8283D1A5700AD9046 /* Level 1 */,
+				3687D2A7283D1A5100AD9046 /* Level 2 */,
+			);
+			path = Programmers;
+			sourceTree = "<group>";
+		};
+		3687D2A7283D1A5100AD9046 /* Level 2 */ = {
+			isa = PBXGroup;
+			children = (
+				3687D2A5283D184900AD9046 /* 가장 큰 정사각형 찾기.swift */,
+				3687D2A9283D1AA500AD9046 /* 방문 길이.swift */,
+			);
+			path = "Level 2";
+			sourceTree = "<group>";
+		};
+		3687D2A8283D1A5700AD9046 /* Level 1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Level 1";
 			sourceTree = "<group>";
 		};
 		36A73BF5283682D60048B94A /* String */ = {
