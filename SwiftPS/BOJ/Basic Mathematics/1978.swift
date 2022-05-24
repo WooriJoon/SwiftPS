@@ -22,3 +22,22 @@
 //    }
 //}
 //print(count)
+
+//import Foundation
+//
+//let input = readLine()!.split(separator: " ").map() { Int($0)! }
+//let M = input[0]
+//let N = input[1]
+//var primeNumbers: [Int] = []
+//
+//OUTER: for i in M...N {
+//    guard i != 1 else { continue }
+//    for j in 2..<i {
+//        if i % j == 0 { continue OUTER }
+//    }
+//    primeNumbers.append(i)
+//}
+//
+//for i in 0..<primeNumbers.count {
+//    print(primeNumbers[i])
+//}
