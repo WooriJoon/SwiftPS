@@ -7,18 +7,25 @@
 
 import Foundation
 
-func solution(_ lottos:[Int], _ win_nums:[Int]) -> [Int] {
-    var numberOfZero: Int = 0
-    var numberOfCorrect: Int = 0
-    
-    for i in lottos {
-        guard i != 0 else {
-            numberOfZero += 1
-            continue
-        }
-        for j in win_nums {
-            if i == j { numberOfCorrect += 1 }
+func solution(_ board:[[Int]], _ moves:[Int]) -> Int {
+    var copyBoard: [[Int]] = board
+    var basket: [Int] = []
+    var result: Int = 0
+
+    for i in moves {
+        let column: Int = i - 1
+
+        for row in 0..<copyBoard.count {
+            guard copyBoard[row][column] != 0 else { continue }
+
+            if copyBoard[row][column] == basket.last {
+                basket.removeLast()
+                result += 1
+            } else { basket.append(copyBoard[row][column]) }
+
+            copyBoard[row][column] = 0
+            break
         }
     }
-    return [min(7 - numberOfCorrect - numberOfZero, 6), min(7 - numberOfCorrect, 6)]
+    return result * 2
 }
