@@ -12,8 +12,8 @@ func solution(_ board:[[Int]], _ moves:[Int]) -> Int {
     var basket: [Int] = []
     var result: Int = 0
 
-    for i in moves {
-        let column: Int = i - 1
+    for i in 0..<moves.count {
+        let column: Int = moves[i] - 1
 
         for row in 0..<copyBoard.count {
             guard copyBoard[row][column] != 0 else { continue }
