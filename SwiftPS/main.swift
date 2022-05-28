@@ -7,25 +7,31 @@
 
 import Foundation
 
-func solution(_ board:[[Int]], _ moves:[Int]) -> Int {
-    var copyBoard: [[Int]] = board
-    var basket: [Int] = []
-    var result: Int = 0
+let dartResult: String = "1D2S#10S"
+var splitResult: [String] = []
+var result: Int = 0
+var temp = ""
 
-    for i in 0..<moves.count {
-        let column: Int = moves[i] - 1
+//for ch in dartResult {
+//    if Int(String(ch)) == nil {
+//        splitResult[splitResult.count -  1].append(ch)
+//    } else {
+//        splitResult.append(String(ch))
+//    }
+//}
 
-        for row in 0..<copyBoard.count {
-            guard copyBoard[row][column] != 0 else { continue }
-
-            if copyBoard[row][column] == basket.last {
-                basket.removeLast()
-                result += 1
-            } else { basket.append(copyBoard[row][column]) }
-
-            copyBoard[row][column] = 0
-            break
-        }
+for word in dartResult {
+    if (Int(String(word)) == nil) { // 숫자가 아닌경우
+      if word == "*" || word == "#" {
+        splitResult[splitResult.count-1] += String(word)
+      } else {
+        temp += String(word)
+        splitResult.append(temp)
+        temp = ""
+      }
+    } else { // 숫자인경우
+      temp += String(word)
     }
-    return result * 2
 }
+
+print(splitResult)

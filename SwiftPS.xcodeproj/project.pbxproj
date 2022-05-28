@@ -38,6 +38,7 @@
 		361A6223283557F800D9A038 /* 4344.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4344.swift; sourceTree = "<group>"; };
 		3625BC972831397F0099A5A0 /* 10818.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10818.swift; sourceTree = "<group>"; };
 		3625BC9D28313EF10099A5A0 /* 1065.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1065.swift; sourceTree = "<group>"; };
+		364DCF072840D9510044A2D2 /* 모의고사.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "모의고사.swift"; sourceTree = "<group>"; };
 		3674323E28310035007DA511 /* SwiftPS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftPS; sourceTree = BUILT_PRODUCTS_DIR; };
 		3674324128310035007DA511 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		367432492831005E007DA511 /* 2798.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2798.swift; sourceTree = "<group>"; };
@@ -203,6 +204,7 @@
 				36083A00283E43FA0006E698 /* 소수 만들기.swift */,
 				368647F3283F992F00C2A178 /* 키패드 누르기.swift */,
 				368647F5283FE6E800C2A178 /* K번째수.swift */,
+				364DCF072840D9510044A2D2 /* 모의고사.swift */,
 			);
 			path = "Level 1";
 			sourceTree = "<group>";
