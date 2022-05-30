@@ -7,13 +7,19 @@
 
 import Foundation
 
-let input = readLine()!
-var arr: [Int] = []
+let N = Int(readLine()!)!
+var arr: [(Int, Int)] = []
 
-for ch in input { arr.append(Int(String(ch))!) }
+for _ in 0..<N {
+    let input = readLine()!.split(separator: " ").map() { Int($0)! }
+    arr.append((input[0], input[1]))
+}
 
-arr = arr.sorted()
-arr = arr.reversed()
+arr.sort { (x, y) in
+    if x.0 == y.0 { return x.1 < y.1 }
+    return x.0 < y.0
+}
 
-for i in 0..<arr.count { print("\(arr[i])", terminator: "") }
-print()
+for i in 0..<N {
+    print("\(arr[i].0) \(arr[i].1)")
+}
