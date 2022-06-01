@@ -14,7 +14,7 @@
 //
 //    let root = Int(sqrt(Double(n)))
 //    for i in 2...root { if n % i == 0 { return false } }
-//    
+//
 //    return true
 //}
 //
