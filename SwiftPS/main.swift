@@ -7,19 +7,26 @@
 
 import Foundation
 
-let N = Int(readLine()!)!
-var arr: [(Int, Int)] = []
+func isPrimeNumber(_ n: Int) -> Bool {
+    if n == 1 { return false }
+    if n == 2 || n == 3 { return true }
 
-for _ in 0..<N {
-    let input = readLine()!.split(separator: " ").map() { Int($0)! }
-    arr.append((input[0], input[1]))
+    let root = Int(sqrt(Double(n)))
+    for i in 2...root { if n % i == 0 { return false } }
+    
+    return true
 }
 
-arr.sort { (x, y) in
-    if x.0 == y.0 { return x.1 < y.1 }
-    return x.0 < y.0
-}
+func solution(_ n:Int, _ k:Int) -> Int {
+    let tempNum: String = String(n, radix: k)
+    var convertNum: [String.SubSequence] = []
+    var result: Int = 0
 
-for i in 0..<N {
-    print("\(arr[i].0) \(arr[i].1)")
+    convertNum = tempNum.split(separator: "0")
+
+    for str in convertNum {
+        let num = Int(str)!
+        if isPrimeNumber(num) { result += 1 }
+    }
+    return result
 }
