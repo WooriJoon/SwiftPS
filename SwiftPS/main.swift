@@ -9,23 +9,27 @@ import Foundation
 
 let input = readLine()!.split(separator: " ").map() { Int($0)! }
 let N = input[0]
-let M = input[1]
+let K = input[1]
+var circularQueue: [Int] = []
+var index: Int = -1
+var result: [Int] = []
 
-var pokemonIndex: Dictionary<Int, String> = [:]
-var pokemonName: Dictionary<String, Int> = [:]
+for i in 1...N { circularQueue.append(i) }
 
-for i in 1...N {
-    let pokemon = readLine()!
-    pokemonIndex[i] = pokemon
-    pokemonName[pokemon] = i
-}
-
-for _ in 0..<M {
-    let problem = readLine()!
-    
-    guard let num = Int(problem) else {
-        print(pokemonName[problem]!)
-        continue
+while circularQueue.count > 0 {
+    for _ in 1...K {
+        if index == circularQueue.count - 1 { index = 0 }
+        else { index += 1 }
     }
-    print(pokemonIndex[num]!)
+    
+    result.append(circularQueue.remove(at: index))
+    index -= 1
 }
+
+print("<", terminator: "")
+for i in 0..<result.count {
+    if i != result.count - 1 { print("\(result[i]), ", terminator: "") }
+    else { print("\(result[i])>") }
+}
+
+
