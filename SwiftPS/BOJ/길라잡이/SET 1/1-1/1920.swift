@@ -5,7 +5,7 @@
 //  Created by WooriJoon on 2022/12/30.
 //
 
-/// 2750 수 찾기
+/// 1920 수 찾기
 
 //import Foundation
 //
