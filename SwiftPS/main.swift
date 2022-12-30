@@ -8,31 +8,36 @@
 import Foundation
 
 let N = Int(readLine()!)!
-let havingCards = readLine()!.split(separator: " ").map() { Int($0)! }.sorted()
-let M = Int(readLine()!)!
-let compareCards = readLine()!.split(separator: " ").map() { Int($0)! }
+var stack: [Int] = []
 
-func binarySearch(array: [Int], target: Int) -> Bool {
-    var min = 0
-    var max = array.count - 1
+for _ in 0..<N {
+    let command = readLine()!.split(separator: " ")
 
-    while (min <= max) {
-        let mid = (min + max) / 2
-
-        if array[mid] == target {
-            return true
-        } else if array[mid] > target {
-            max = mid - 1
-        } else {
-            min = mid + 1
+    switch command.first! {
+    case "push":
+        stack.append(Int(command[1])!)
+        
+    case "pop":
+        guard !stack.isEmpty else {
+            print(-1)
+            break
         }
+        print(stack.removeLast())
+        
+    case "size":
+        print(stack.count)
+        
+    case "empty":
+        stack.isEmpty ? print(1) : print(0)
+        
+    case "top":
+        guard !stack.isEmpty else {
+            print(-1)
+            break
+        }
+        print(stack[stack.count-1])
+        
+    default:
+        break
     }
-
-    return false
 }
-
-for i in compareCards.indices {
-    print(binarySearch(array: havingCards, target: compareCards[i]) ? 1 : 0, terminator: " ")
-}
-
-print()
