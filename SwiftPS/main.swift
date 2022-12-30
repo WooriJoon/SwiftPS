@@ -8,24 +8,32 @@
 import Foundation
 
 let N = Int(readLine()!)!
-var arr: [Int] = []
+let givenArray = readLine()!.split(separator: " ").map() { Int($0)! }
+let M = Int(readLine()!)!
+let checkedArray = readLine()!.split(separator: " ").map() { Int($0)! }
 
-for _ in 0..<N {
-    let num = Int(readLine()!)!
-    arr.append(num)
-}
-
-func quickSort(_ arr: [Int]) -> [Int] {
-    guard arr.count > 1 else { return arr }
+func binarySearch(array: [Int], target: Int) -> Bool {
+    var min = 0
+    var max = array.count - 1
     
-    let pivot = arr[0]
-    let leftArray = arr.filter { $0 < pivot }
-    let rightArray = arr.filter { $0 > pivot }
-    return quickSort(leftArray) + [pivot] + quickSort(rightArray)
+    while (min <= max) {
+        let mid = (min + max) / 2
+        
+        if array[mid] == target {
+            return true
+        } else if array[mid] > target {
+            max = mid - 1
+        } else {
+            min = mid + 1
+        }
+    }
+    
+    return false
 }
 
-let sortedArr = quickSort(arr)
+let sortedGivenArray = givenArray.sorted()
 
-for i in 0..<sortedArr.count {
-    print(sortedArr[i])
+for i in checkedArray.indices {
+    print(binarySearch(array: sortedGivenArray, target: checkedArray[i]) ? 1 : 0)
 }
+
