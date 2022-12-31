@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  10845.swift
 //  SwiftPS
 //
-//  Created by Chicken on 2022/05/15.
+//  Created by WooriJoon on 2022/12/31.
 //
 
-import Foundation
+// 10845 큐
 
 let N = Int(readLine()!)!
 var queue: [Int] = []
@@ -48,3 +48,5 @@ for _ in 0..<N {
         break
     }
 }
+
+/// 링크: https://www.acmicpc.net/problem/10845
