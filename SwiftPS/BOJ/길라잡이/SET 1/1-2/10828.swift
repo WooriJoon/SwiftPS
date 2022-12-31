@@ -18,11 +18,7 @@ for _ in 0..<N {
         stack.append(Int(command[1])!)
 
     case "pop":
-        guard !stack.isEmpty else {
-            print(-1)
-            break
-        }
-        print(stack.removeLast())
+        stack.isEmpty ? print(-1) : print(stack.removeLast())
 
     case "size":
         print(stack.count)
@@ -31,11 +27,7 @@ for _ in 0..<N {
         stack.isEmpty ? print(1) : print(0)
 
     case "top":
-        guard !stack.isEmpty else {
-            print(-1)
-            break
-        }
-        print(stack[stack.count-1])
+        stack.isEmpty ? print(-1) : print(stack.last!)
 
     default:
         break
