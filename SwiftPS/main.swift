@@ -7,44 +7,39 @@
 
 import Foundation
 
-let N = Int(readLine()!)!
-var queue: [Int] = []
-
-for _ in 0..<N {
-    let command = readLine()!.split(separator: " ")
-
-    switch command.first! {
-    case "push":
-        queue.append(Int(command[1])!)
-        
-    case "pop":
-        guard !queue.isEmpty else {
-            print(-1)
-            break
-        }
-        print(queue.removeFirst())
-        
-    case "size":
-        print(queue.count)
-        
-    case "empty":
-        queue.isEmpty ? print(1) : print(0)
-        
-    case "front":
-        guard !queue.isEmpty else {
-            print(-1)
-            break
-        }
-        print(queue.first!)
-        
-    case "back":
-        guard !queue.isEmpty else {
-            print(-1)
-            break
-        }
-        print(queue.last!)
-        
-    default:
-        break
-    }
-}
+//let N = Int(readLine()!)!
+//var deque: [Int] = []
+//
+//for _ in 0..<N {
+//    let command = readLine()!.split(separator: " ")
+//
+//    switch command.first! {
+//    case "push_front":
+//        deque.insert(Int(command[1])!, at: 0)
+//
+//    case "push_back":
+//        deque.append(Int(command[1])!)
+//
+//    case "pop_front":
+//        break
+//
+//    case "pop_back":
+//        break
+//
+//    case "size":
+//        print(deque.count)
+//
+//    case "empty":
+//        deque.isEmpty ? print(1) : print(0)
+//
+//    case "front":
+//        deque.isEmpty ? print(-1) : print(deque.first!)
+//
+//    case "back":
+//        deque.isEmpty ? print(-1) : print(deque.last!)
+//
+//    default:
+//        break
+//
+//    }
+//}

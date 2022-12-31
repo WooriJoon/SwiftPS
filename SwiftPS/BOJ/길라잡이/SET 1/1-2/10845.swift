@@ -18,11 +18,7 @@ for _ in 0..<N {
         queue.append(Int(command[1])!)
         
     case "pop":
-        guard !queue.isEmpty else {
-            print(-1)
-            break
-        }
-        print(queue.removeFirst())
+        queue.isEmpty ? print(-1) : print(queue.removeFirst())
         
     case "size":
         print(queue.count)
@@ -31,18 +27,10 @@ for _ in 0..<N {
         queue.isEmpty ? print(1) : print(0)
         
     case "front":
-        guard !queue.isEmpty else {
-            print(-1)
-            break
-        }
-        print(queue.first!)
+        queue.isEmpty ? print(-1) : print(queue.first!)
         
     case "back":
-        guard !queue.isEmpty else {
-            print(-1)
-            break
-        }
-        print(queue.last!)
+        queue.isEmpty ? print(-1) : print(queue.last!)
         
     default:
         break
