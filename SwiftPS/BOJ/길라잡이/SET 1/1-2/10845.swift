@@ -18,19 +18,19 @@ for _ in 0..<N {
         queue.append(Int(command[1])!)
         
     case "pop":
-        queue.isEmpty ? print(-1) : print(queue.removeFirst())
+        print(queue.isEmpty ? -1 : queue.removeFirst())
         
     case "size":
         print(queue.count)
         
     case "empty":
-        queue.isEmpty ? print(1) : print(0)
+        print(queue.isEmpty ? 1 : 0)
         
     case "front":
-        queue.isEmpty ? print(-1) : print(queue.first!)
+        print(queue.isEmpty ? -1 : queue.first!)
         
     case "back":
-        queue.isEmpty ? print(-1) : print(queue.last!)
+        print(queue.isEmpty ? -1 : queue.last!)
         
     default:
         break
