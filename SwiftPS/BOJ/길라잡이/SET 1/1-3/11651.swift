@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  11651.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/01/07.
 //
 
-import Foundation
+/// 11651 좌표 정렬하기 2
 
 let N = Int(readLine()!)!
 var coordinates: [(Int, Int)] = []
@@ -18,3 +18,5 @@ for _ in 0..<N {
 let answer = coordinates.sorted() { $0.1 != $1.1 ? $0.1 < $1.1 : $0.0 < $1.0 }
 
 for i in 0..<N { print(answer[i].0, answer[i].1) }
+
+/// 링크: https://www.acmicpc.net/problem/11651
