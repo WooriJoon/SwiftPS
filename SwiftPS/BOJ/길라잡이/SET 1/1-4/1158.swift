@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  1158.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/01/07.
 //
 
-import Foundation
+/// 1158 요세푸스 문제
 
 let input = readLine()!.split(separator: " ")
 let N = Int(input[0])!
@@ -25,3 +25,5 @@ while array.count > 1 {
 answer.append(String(array.first!))
 
 print("<\(answer.joined(separator: ", "))>")
+
+/// 링크: https://www.acmicpc.net/problem/1158
