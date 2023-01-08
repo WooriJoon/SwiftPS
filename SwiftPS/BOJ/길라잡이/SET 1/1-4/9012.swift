@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  9012.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/01/09.
 //
 
-import Foundation
+/// 9012 괄호
 
 let T = Int(readLine()!)!
 var stack: [Int] = []
@@ -38,3 +38,5 @@ OUTER: for _ in 0..<T {
     
     stack = []
 }
+
+/// 링크: https://www.acmicpc.net/problem/9012
