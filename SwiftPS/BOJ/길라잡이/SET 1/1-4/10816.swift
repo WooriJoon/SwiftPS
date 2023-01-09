@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  10816.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/01/10.
 //
 
-import Foundation
+/// 10861 숫자 카드 2
 
 let N = Int(readLine()!)!
 let givenCards = readLine()!.split(separator: " ").map() { Int($0)! }
@@ -32,3 +32,5 @@ for i in myCards {
 }
 
 print(answer.map(){String($0)}.joined(separator: " "))
+
+/// 링크 https://www.acmicpc.net/problem/10816
