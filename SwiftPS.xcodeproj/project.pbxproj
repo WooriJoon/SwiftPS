@@ -43,6 +43,7 @@
 		3625BC9D28313EF10099A5A0 /* 1065.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1065.swift; sourceTree = "<group>"; };
 		362EC42328486B2000937105 /* 없는 숫자 더하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "없는 숫자 더하기.swift"; sourceTree = "<group>"; };
 		36452F4A284538C700FE562A /* 11650.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11650.swift; sourceTree = "<group>"; };
+		364D6CD6296F29F300F32EAD /* 14889.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14889.swift; sourceTree = "<group>"; };
 		364DCF072840D9510044A2D2 /* 모의고사.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "모의고사.swift"; sourceTree = "<group>"; };
 		36597DFA295EA68200CBE56E /* 2750.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2750.swift; sourceTree = "<group>"; };
 		36597DFC295EB8BB00CBE56E /* 1920.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1920.swift; sourceTree = "<group>"; };
@@ -168,10 +169,48 @@
 			path = Function;
 			sourceTree = "<group>";
 		};
+		364D6CD3296F299300F32EAD /* SET 2 */ = {
+			isa = PBXGroup;
+			children = (
+				364D6CD4296F29A400F32EAD /* 2-3 */,
+			);
+			path = "SET 2";
+			sourceTree = "<group>";
+		};
+		364D6CD4296F29A400F32EAD /* 2-3 */ = {
+			isa = PBXGroup;
+			children = (
+				364D6CD6296F29F300F32EAD /* 14889.swift */,
+			);
+			path = "2-3";
+			sourceTree = "<group>";
+		};
+		364D6CD5296F29B400F32EAD /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				36C2E9B428326F33007F16E0 /* Condition */,
+				361911442832C386005AF1E4 /* Loop */,
+				3625BC99283139A40099A5A0 /* Array */,
+				3625BC9C28313EDC0099A5A0 /* Function */,
+				36A73BF5283682D60048B94A /* String */,
+				36CBBD0E283890D8009BC471 /* Basic Mathematics */,
+				36CBBD11283892D8009BC471 /* Recursive Function */,
+				3625BC9B283139D20099A5A0 /* BruteForce */,
+				3625BC9A283139B50099A5A0 /* Stack */,
+				36BB4C4E2831EDA400194F58 /* DynamicProgramming */,
+				36CBBD1B2838BD91009BC471 /* Sort */,
+				369777672847620700F62080 /* Set And Map */,
+				3608F83B284A7A07004C4209 /* Geometry */,
+				36CBBD182838B023009BC471 /* Queue */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
 		36597DF4295EA64400CBE56E /* 길라잡이 */ = {
 			isa = PBXGroup;
 			children = (
 				36597DF5295EA64F00CBE56E /* SET 1 */,
+				364D6CD3296F299300F32EAD /* SET 2 */,
 			);
 			name = "길라잡이";
 			path = "길라잡이";
@@ -265,20 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				36597DF4295EA64400CBE56E /* 길라잡이 */,
-				36C2E9B428326F33007F16E0 /* Condition */,
-				361911442832C386005AF1E4 /* Loop */,
-				3625BC99283139A40099A5A0 /* Array */,
-				3625BC9C28313EDC0099A5A0 /* Function */,
-				36A73BF5283682D60048B94A /* String */,
-				36CBBD0E283890D8009BC471 /* Basic Mathematics */,
-				36CBBD11283892D8009BC471 /* Recursive Function */,
-				3625BC9B283139D20099A5A0 /* BruteForce */,
-				3625BC9A283139B50099A5A0 /* Stack */,
-				36BB4C4E2831EDA400194F58 /* DynamicProgramming */,
-				36CBBD1B2838BD91009BC471 /* Sort */,
-				369777672847620700F62080 /* Set And Map */,
-				3608F83B284A7A07004C4209 /* Geometry */,
-				36CBBD182838B023009BC471 /* Queue */,
+				364D6CD5296F29B400F32EAD /* Legacy */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";
