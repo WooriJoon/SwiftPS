@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  15686.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/01/13.
 //
 
-import Foundation
+/// 15686 치킨 배달
 
 let input = readLine()!.split(separator: " ")
 let N = Int(input[0])!
@@ -56,3 +56,5 @@ func DFS(depth: Int, start: Int) {
 
 DFS(depth: 0, start: 0)
 print(chickenDistance)
+
+/// 링크: https://www.acmicpc.net/problem/15686
