@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  2661.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/01/13.
 //
 
-import Foundation
+/// 2661 좋은수열
 
 let N = Int(readLine()!)!
 var answer: [String] = ["1"]
@@ -44,3 +44,5 @@ func isGoodSequence(sequence: [String]) -> Bool {
 }
 
 DFS(depth: 0, sequence: answer)
+
+/// 링크: https://www.acmicpc.net/problem/2661
