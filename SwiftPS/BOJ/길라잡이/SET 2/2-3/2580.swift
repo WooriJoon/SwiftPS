@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  2580.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/01/13.
 //
 
-import Foundation
+/// 2580 스도쿠
 
 var sudoku: [[Int]] = []
 var row: [[Bool]] = Array(repeating: Array(repeating: false, count: 10), count: 9)
@@ -71,3 +71,5 @@ func answer() {
 }
 
 DFS(depth: 0)
+
+/// 링크: https://www.acmicpc.net/problem/2580
