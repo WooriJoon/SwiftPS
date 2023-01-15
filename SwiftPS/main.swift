@@ -11,16 +11,12 @@ var sudoku: [[Int]] = []
 var row: [[Bool]] = Array(repeating: Array(repeating: false, count: 10), count: 9)
 var col: [[Bool]] = Array(repeating: Array(repeating: false, count: 10), count: 9)
 var square: [[Bool]] = Array(repeating: Array(repeating: false, count: 10), count: 9)
-var blankCoordinates: [(Int, Int, Bool)] = []
 var exit = false
 
 for _ in 0..<9 { sudoku.append(readLine()!.split(separator: " ").map() { Int($0)! }) }
 for i in sudoku.indices {
     for j in sudoku.indices {
-        guard sudoku[i][j] != 0 else {
-            blankCoordinates.append((i, j, false))
-            continue
-        }
+        guard sudoku[i][j] != 0 else { continue }
         row[i][sudoku[i][j]] = true
         col[j][sudoku[i][j]] = true
         square[((i / 3) * 3) + (j / 3)][sudoku[i][j]] = true
