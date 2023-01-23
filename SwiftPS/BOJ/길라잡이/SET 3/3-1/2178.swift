@@ -11,7 +11,7 @@ let input = readLine()!.split(separator: " ").map { Int($0)! }
 let N = input[0]
 let M = input[1]
 
-// 위부터 시계방향
+// 다음 길의 인덱스를 찾기위한 x, y의 변화량이며, 위부터 시계방향으로 탐색
 let dx: [Int] = [0, 1, 0, -1]
 let dy: [Int] = [-1, 0, 1, 0]
 
@@ -33,6 +33,7 @@ queue.append((0, 0))
 while !queue.isEmpty {
     let currentCoordinate = queue.removeFirst()
     
+    // 현재 위치의 x, y 좌표
     let x = currentCoordinate.0
     let y = currentCoordinate.1
     
@@ -43,13 +44,14 @@ while !queue.isEmpty {
         
         // 미로 밖으로 나가지 않고 && 방문 안한 곳 && 갈 수 있는 곳
         if (nx >= 0) && (nx < N) && (ny >= 0) && (ny < M) && !visited[nx][ny] && (maze[nx][ny] == 1) {
-            distance[nx][ny] = distance[x][y] + 1
             visited[nx][ny] = true
+            distance[nx][ny] = distance[x][y] + 1
             queue.append((nx, ny))
         }
     }
 }
 
+// (N, M)까지의 거리
 print(distance[N-1][M-1])
 
 /// 링크: https://www.acmicpc.net/problem/2178
