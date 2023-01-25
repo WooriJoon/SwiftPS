@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  1697.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/01/23.
 //
 
-import Foundation
+/// 1697 숨바꼭질
 
 let input = readLine()!.split(separator: " ").map { Int($0)! }
 var N = input[0]
@@ -41,4 +41,4 @@ while true {
     index += 1
 }
 
-
+/// 링크: https://www.acmicpc.net/problem/1697
