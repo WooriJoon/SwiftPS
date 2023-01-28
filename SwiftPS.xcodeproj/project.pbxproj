@@ -55,6 +55,11 @@
 		36603738295FFEA9008A1832 /* 10845.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10845.swift; sourceTree = "<group>"; };
 		366C3E2F28475067004FEE3E /* 음양 더하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "음양 더하기.swift"; sourceTree = "<group>"; };
 		366C3E3128475A31004FEE3E /* 3진법 뒤집기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3진법 뒤집기.swift"; sourceTree = "<group>"; };
+		367212DF2982E51000462C22 /* 1003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1003.swift; sourceTree = "<group>"; };
+		367212E12982E51400462C22 /* 1463.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1463.swift; sourceTree = "<group>"; };
+		367212E32982E51800462C22 /* 2579.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2579.swift; sourceTree = "<group>"; };
+		367212E52982E51C00462C22 /* 1932.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1932.swift; sourceTree = "<group>"; };
+		367212E72982E52100462C22 /* 1149.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1149.swift; sourceTree = "<group>"; };
 		3672CA7D296C8AB000C18663 /* 10867.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10867.swift; sourceTree = "<group>"; };
 		3672CA7F296C8EEF00C18663 /* 10816.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10816.swift; sourceTree = "<group>"; };
 		3674323E28310035007DA511 /* SwiftPS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftPS; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -286,6 +291,18 @@
 			path = "1-1";
 			sourceTree = "<group>";
 		};
+		367212DA2982E4DF00462C22 /* 3-2 */ = {
+			isa = PBXGroup;
+			children = (
+				367212DF2982E51000462C22 /* 1003.swift */,
+				367212E12982E51400462C22 /* 1463.swift */,
+				367212E32982E51800462C22 /* 2579.swift */,
+				367212E52982E51C00462C22 /* 1932.swift */,
+				367212E72982E52100462C22 /* 1149.swift */,
+			);
+			path = "3-2";
+			sourceTree = "<group>";
+		};
 		3674323528310035007DA511 = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				367880E2297CD1BC00B8E42D /* 3-1 */,
+				367212DA2982E4DF00462C22 /* 3-2 */,
 			);
 			path = "SET 3";
 			sourceTree = "<group>";

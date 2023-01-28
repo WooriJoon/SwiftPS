@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  2579.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/01/27.
 //
 
-import Foundation
+/// 2579 계단 오르기
 
 let countOfStairs = Int(readLine()!)!
 var scores: [Int] = [0]
@@ -28,3 +28,5 @@ func climb(_ n: Int) -> Int {
 }
 
 print(climb(countOfStairs))
+
+/// 링크: https://www.acmicpc.net/problem/2579
