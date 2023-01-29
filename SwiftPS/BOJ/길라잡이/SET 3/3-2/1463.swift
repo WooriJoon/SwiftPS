@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  1463.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/01/27.
 //
 
-import Foundation
+/// 1463 1로 만들기
 
 let N = Int(readLine()!)!
 var minCost: [Int] = Array(repeating: 0, count: N+1)
@@ -23,3 +23,4 @@ for i in 2...N {
 
 print(minCost[N])
 
+/// 링크: https://www.acmicpc.net/problem/1463
