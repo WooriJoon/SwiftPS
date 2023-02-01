@@ -8,18 +8,19 @@
 import Foundation
 
 let N = Int(readLine()!)!
-var minCost: [Int] = Array(repeating: 0, count: N+1)
+var costs: [(R: Int, G: Int, B: Int)] = []
 
-guard N != 1 else {
-    print(0)
-    exit(0)
+for _ in 0..<N {
+    let input = readLine()!.split(separator: " ").map { Int($0)! }
+    costs.append((input[0], input[1], input[2]))
 }
 
-for i in 2...N {
-    minCost[i] = minCost[i-1] + 1
-    if i % 3 == 0 { minCost[i] = min(minCost[i], minCost[i/3] + 1) }
-    if i % 2 == 0 { minCost[i] = min(minCost[i], minCost[i/2] + 1) }
+for i in 1..<N {
+    costs[i].R += min(costs[i-1].G, costs[i-1].B)
+    costs[i].G += min(costs[i-1].R, costs[i-1].B)
+    costs[i].B += min(costs[i-1].R, costs[i-1].G)
 }
 
-print(minCost[N])
+let answer = [costs[N-1].R, costs[N-1].G, costs[N-1].B]
+print(answer.min()!)
 
