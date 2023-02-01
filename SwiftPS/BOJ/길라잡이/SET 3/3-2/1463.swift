@@ -10,6 +10,7 @@
 let N = Int(readLine()!)!
 var minCost: [Int] = Array(repeating: 0, count: N+1)
 
+// 예외처리
 guard N != 1 else {
     print(0)
     exit(0)
