@@ -7,6 +7,90 @@
 
 import Foundation
 
+/// 토마토
+//let dr: [Int] = [-1, 0, 1, 0]
+//let dc: [Int] = [0, 1, 0, -1]
+//
+//let input = readLine()!.split(separator: " ").map { Int($0)! }
+//let M = input[0]
+//let N = input[1]
+//let H = input[2]
+//
+//var boxes: [[[Int]]] = Array(repeating: Array(repeating: Array(repeating: 0, count: M), count: N), count: H)
+//
+//for height in 0..<H {
+//    for row in 0..<N {
+//        let input = readLine()!.split(separator: " ").map { Int($0)! }
+//        for col in 0..<M {
+//            boxes[height][row][col] = input[col]
+//        }
+//    }
+//}
+//
+//for i in 0..<H {
+//    for j in 0..<N {
+//        print(boxes[i][j])
+//    }
+//}
+//
+//func BFS(height: Int, row: Int, col: Int) -> Int {
+//    var queue: [(height: Int, row: Int, col: Int, cycle: Int)] = []
+//    var index: Int = 0
+//
+//    boxes[height][row][col] = -1
+//    queue.append((height, row, col, 0))
+//
+//    while queue.count > index {
+//        let current = queue[index]
+//        let h = current.height
+//        let r = current.row
+//        let c = current.col
+//
+//        for i in 0..<4 {
+//            let nr = r + dr[i]
+//            let nc = c + dc[i]
+//
+//            if nr >= 0 && nr < N && nc >= 0 && nc < M && boxes[h][nr][nc] != -1 {
+//                boxes[h][nr][nc] = -1
+//                queue.append((h, nr, nc, current.cycle + 1))
+//            }
+//        }
+//
+//
+//        index += 1
+//    }
+//
+//    return queue[index-1].cycle
+//}
+//
+//for height in 0..<H {
+//    for row in 0..<N {
+//        for col in 0..<M {
+//            if boxes[height][row][col] == 1 {
+//                print(BFS(height: height, row: row, col: col))
+//            }
+//        }
+//    }
+//}
+/// 여기까지
+
+
+//let input = readLine()!.split(separator: " ").map { Int($0)! }
+//let row = input[0]
+//let col = input[1]
+//var graph: [[Int]] = Array(repeating: Array(repeating: 0, count: col), count: row)
+//
+//for i in 0..<row {
+//    let input = readLine()!.split(separator: " ").map { Int($0)! }
+//    for j in 0..<col {
+//        graph[i][j] = input[j]
+//    }
+//}
+//
+//for i in 0..<row {
+//    print(graph[i])
+//}
+
 //let dx: [Int] = [-1, 0, 1, 0]
 //let dy: [Int] = [0, 1, 0, -1]
 //
