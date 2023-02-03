@@ -7,73 +7,80 @@
 
 import Foundation
 
-/// 토마토
-//let dr: [Int] = [-1, 0, 1, 0]
-//let dc: [Int] = [0, 1, 0, -1]
-//
-//let input = readLine()!.split(separator: " ").map { Int($0)! }
-//let M = input[0]
-//let N = input[1]
-//let H = input[2]
-//
-//var boxes: [[[Int]]] = Array(repeating: Array(repeating: Array(repeating: 0, count: M), count: N), count: H)
-//
-//for height in 0..<H {
-//    for row in 0..<N {
-//        let input = readLine()!.split(separator: " ").map { Int($0)! }
-//        for col in 0..<M {
-//            boxes[height][row][col] = input[col]
-//        }
-//    }
-//}
-//
-//for i in 0..<H {
-//    for j in 0..<N {
-//        print(boxes[i][j])
-//    }
-//}
-//
-//func BFS(height: Int, row: Int, col: Int) -> Int {
-//    var queue: [(height: Int, row: Int, col: Int, cycle: Int)] = []
-//    var index: Int = 0
-//
-//    boxes[height][row][col] = -1
-//    queue.append((height, row, col, 0))
-//
-//    while queue.count > index {
-//        let current = queue[index]
-//        let h = current.height
-//        let r = current.row
-//        let c = current.col
-//
-//        for i in 0..<4 {
-//            let nr = r + dr[i]
-//            let nc = c + dc[i]
-//
-//            if nr >= 0 && nr < N && nc >= 0 && nc < M && boxes[h][nr][nc] != -1 {
-//                boxes[h][nr][nc] = -1
-//                queue.append((h, nr, nc, current.cycle + 1))
-//            }
-//        }
-//
-//
-//        index += 1
-//    }
-//
-//    return queue[index-1].cycle
-//}
-//
-//for height in 0..<H {
-//    for row in 0..<N {
-//        for col in 0..<M {
-//            if boxes[height][row][col] == 1 {
-//                print(BFS(height: height, row: row, col: col))
-//            }
-//        }
-//    }
-//}
-/// 여기까지
+let dx: [Int] = [-1, 0, 1, 0]
+let dy: [Int] = [0, 1, 0, -1]
 
+let input = readLine()!.split(separator: " ").map { Int($0)! }
+let M = input[0]
+let N = input[1]
+let H = input[2]
+
+var boxes: [[[Int]]] = Array(repeating: Array(repeating: Array(repeating: 0, count: M), count: N), count: H)
+var queue: [(height: Int, x: Int, y: Int, cycle: Int)] = []
+var index: Int = 0
+
+for height in 0..<H {
+    for x in 0..<N {
+        let input = readLine()!.split(separator: " ").map { $0 }
+        for y in 0..<M {
+            // 익은 토마토 자리를 queue에 추가하고 방문 처리
+            if input[y] == "1" {
+                boxes[height][x][y] = -1
+                queue.append((height, x, y, 0))
+            }
+            else if input[y] == "-1" { boxes[height][x][y] = -1 }
+        }
+    }
+}
+
+while queue.count > index {
+    let current = queue[index]
+    let h = current.height
+    let x = current.x
+    let y = current.y
+
+    for i in 0..<4 {
+        let nx = x + dx[i]
+        let ny = y + dy[i]
+
+        if nx >= 0 && nx < N && ny >= 0 && ny < M && boxes[h][nx][ny] != -1 {
+            boxes[h][nx][ny] = -1
+            queue.append((h, nx, ny, current.cycle + 1))
+        }
+    }
+    
+    // 위
+    if h < H-1 && H > 1 && boxes[h+1][x][y] != -1 {
+        boxes[h+1][x][y] = -1
+        queue.append((h+1, x, y, current.cycle + 1))
+    }
+    
+    // 아래
+    if h > 0 && H > 1 && boxes[h-1][x][y] != -1 {
+        boxes[h-1][x][y] = -1
+        queue.append((h-1, x, y, current.cycle + 1))
+    }
+
+    index += 1
+}
+
+var maxCycle: Int = 0
+var isPossible = true
+
+for i in queue.indices { maxCycle = max(maxCycle, queue[i].cycle) }
+if boxes.flatMap({ $0 }).flatMap({ $0 }).contains(0) { isPossible = false }
+
+
+
+//for height in 0..<H {
+//    for x in 0..<N {
+//        for y in 0..<M {
+//            if boxes[height][x][y] == 0 { isPossible = false }
+//        }
+//    }
+//}
+
+print(isPossible ? maxCycle : -1)
 
 //let input = readLine()!.split(separator: " ").map { Int($0)! }
 //let row = input[0]
