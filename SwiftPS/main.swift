@@ -7,6 +7,26 @@
 
 import Foundation
 
+//for _ in 0..<testCase {
+//    let selected = readLine()!.split(separator: " ").map { Int($0)! }
+//
+//    for _ in 0..<selected.count+1 { visited.append(false) }
+//    for _ in 0..<selected.count+1 { finished.append(false) }
+//
+//    visited = []
+//}
+
+//func DFS(_ node: Int, _ selected: [Int]) {
+//    visited[node] = true
+//
+//    if !visited[selected[node]] {
+//        DFS(selected[node], selected)
+//    }
+//
+//    finished[node] = true
+//}
+
+
 //let input = readLine()!.split(separator: " ").map { Int($0)! }
 //let row = input[0]
 //let col = input[1]
