@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  2206.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/02/07.
 //
 
-import Foundation
+/// 2206 벽 부수고 이동하기
 
 let dx: [Int] = [-1, 0, 1, 0]
 let dy: [Int] = [0, 1, 0, -1]
@@ -68,3 +68,5 @@ while queue.count > index {
 }
 
 print(answer)
+
+/// 링크: https://www.acmicpc.net/problem/2206
