@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  11726.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/02/09.
 //
 
-import Foundation
+/// 11726 2×n 타일링
 
 let n = Int(readLine()!)!
 var DP: [Int] = [0, 1, 2]
@@ -22,3 +22,4 @@ default:
     print(DP[n])
 }
 
+/// 링크: https://www.acmicpc.net/problem/11726

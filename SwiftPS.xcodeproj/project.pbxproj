@@ -77,6 +77,7 @@
 		3687D2A5283D184900AD9046 /* 가장 큰 정사각형 찾기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "가장 큰 정사각형 찾기.swift"; sourceTree = "<group>"; };
 		3687D2AB283D3FF300AD9046 /* 로또의 최고 순위와 최저 순위.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "로또의 최고 순위와 최저 순위.swift"; sourceTree = "<group>"; };
 		368A394F296B27E800D542DE /* 9012.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9012.swift; sourceTree = "<group>"; };
+		368C33AD2994CE190070DC28 /* 11726.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11726.swift; sourceTree = "<group>"; };
 		368ECD4F29606A5900070271 /* 1406.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1406.swift; sourceTree = "<group>"; };
 		368FF03D298C2455009BDC0D /* 7576.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 7576.swift; sourceTree = "<group>"; };
 		369777682847622200F62080 /* 1620.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1620.swift; sourceTree = "<group>"; };
@@ -194,9 +195,9 @@
 				36248A9E29922BBF00D21A68 /* 2206.swift */,
 				368FF03D298C2455009BDC0D /* 7576.swift */,
 				36FEDE5E298C41CF00C736BC /* 7569.swift */,
-				3634D401298BB8AA00BDFD8A /* 2583.swift */,
-				36225B8D298FC10100F533C3 /* 2636.swift */,
 				368796DF299011B70022806F /* 9466.swift */,
+				36225B8D298FC10100F533C3 /* 2636.swift */,
+				3634D401298BB8AA00BDFD8A /* 2583.swift */,
 			);
 			path = "3-3";
 			sourceTree = "<group>";
@@ -363,6 +364,7 @@
 				367880E2297CD1BC00B8E42D /* 3-1 */,
 				367212DA2982E4DF00462C22 /* 3-2 */,
 				3634D400298B98B000BDFD8A /* 3-3 */,
+				368C33AC2994CDE80070DC28 /* 3-4 */,
 			);
 			path = "SET 3";
 			sourceTree = "<group>";
@@ -413,6 +415,14 @@
 				362EC42328486B2000937105 /* 없는 숫자 더하기.swift */,
 			);
 			path = "Level 1";
+			sourceTree = "<group>";
+		};
+		368C33AC2994CDE80070DC28 /* 3-4 */ = {
+			isa = PBXGroup;
+			children = (
+				368C33AD2994CE190070DC28 /* 11726.swift */,
+			);
+			path = "3-4";
 			sourceTree = "<group>";
 		};
 		369777672847620700F62080 /* Set And Map */ = {
