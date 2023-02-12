@@ -35,8 +35,10 @@ case 1:
 
 default:
     for i in 2...N {
+        // 현재 값이 DP의 마지막보다 크면 추가
         if A[i] > DP.last! {
             DP.append(A[i])
+        // 아니면 lowerBound의 값과 변경
         } else {
             let lowerBound = lowerBound(array: DP, target: A[i])
             DP[lowerBound] = A[i]
