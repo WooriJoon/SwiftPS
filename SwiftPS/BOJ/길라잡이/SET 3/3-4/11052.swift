@@ -27,7 +27,7 @@ for i in 2...N {
 
 print(DP[N])
 
-/// 그리디로 푸니까 안됨~~
+/// 그리디 안됨~
 //var N = Int(readLine()!)!
 //let P = readLine()!.split(separator: " ").map { Int($0)! }
 //var piecePrice: [(per: Float, numberOfCards: Int)] = []
