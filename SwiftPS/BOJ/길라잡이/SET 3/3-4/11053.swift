@@ -72,22 +72,5 @@ default:
 //
 //    print(DP.max()!)
 //}
-//
-//func lowerBound(array: [Int], letf: Int, right: Int, target: Int) -> Int {
-//    var min = 0
-//    var max = array.count - 1
-//
-//    while min < max {
-//        let mid = (min + max) / 2
-//
-//        if array[mid] < target {
-//            return mid
-//        } else {
-//            max = mid
-//        }
-//    }
-//
-//    return max
-//}
 
 /// 링크: https://www.acmicpc.net/problem/11053
