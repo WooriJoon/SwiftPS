@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  2293.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/02/14.
 //
 
-import Foundation
+/// 2293 동전 1
 
 let input = readLine()!.split(separator: " ").map { Int($0)! }
 let n = input[0]
@@ -24,3 +24,5 @@ for i in coins {
 }
 
 print(DP[k])
+
+/// 링크: https://www.acmicpc.net/problem/2293
