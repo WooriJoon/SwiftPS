@@ -35,6 +35,7 @@
 		360839FE283DCDF60006E698 /* 크레인 인형뽑기 게임.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "크레인 인형뽑기 게임.swift"; sourceTree = "<group>"; };
 		36083A00283E43FA0006E698 /* 소수 만들기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "소수 만들기.swift"; sourceTree = "<group>"; };
 		3608F83C284A7A2D004C4209 /* 3009.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3009.swift; sourceTree = "<group>"; };
+		360B55BD299E187E0034743C /* 11047.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11047.swift; sourceTree = "<group>"; };
 		360E45D12969799500E2079C /* 11651.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11651.swift; sourceTree = "<group>"; };
 		360E45D329697A7300E2079C /* 1158.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1158.swift; sourceTree = "<group>"; };
 		361911422832C37B005AF1E4 /* 1110.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1110.swift; sourceTree = "<group>"; };
@@ -143,6 +144,22 @@
 				3608F83C284A7A2D004C4209 /* 3009.swift */,
 			);
 			path = Geometry;
+			sourceTree = "<group>";
+		};
+		360B55BB299E185C0034743C /* SET 4 */ = {
+			isa = PBXGroup;
+			children = (
+				360B55BC299E186D0034743C /* 4-1 */,
+			);
+			path = "SET 4";
+			sourceTree = "<group>";
+		};
+		360B55BC299E186D0034743C /* 4-1 */ = {
+			isa = PBXGroup;
+			children = (
+				360B55BD299E187E0034743C /* 11047.swift */,
+			);
+			path = "4-1";
 			sourceTree = "<group>";
 		};
 		361911442832C386005AF1E4 /* Loop */ = {
@@ -255,6 +272,7 @@
 				36597DF5295EA64F00CBE56E /* SET 1 */,
 				364D6CD3296F299300F32EAD /* SET 2 */,
 				367880E1297CD1A900B8E42D /* SET 3 */,
+				360B55BB299E185C0034743C /* SET 4 */,
 			);
 			name = "길라잡이";
 			path = "길라잡이";
@@ -430,10 +448,10 @@
 				368C33AD2994CE190070DC28 /* 11726.swift */,
 				368C33AF2994D86D0070DC28 /* 11727.swift */,
 				36794E3C2994E8AD0028D01B /* 1912.swift */,
+				36CB7E07299B6C4000D2CAFB /* 2293.swift */,
 				36B7B5A829979A6F00A1C3DD /* 2156.swift */,
 				369A62512998CC3100AFAE66 /* 11052.swift */,
 				369A62532998CC6B00AFAE66 /* 11053.swift */,
-				36CB7E07299B6C4000D2CAFB /* 2293.swift */,
 				3636CA2D299936D000DEAA1A /* 14003.swift */,
 			);
 			path = "3-4";
