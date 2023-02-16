@@ -21,6 +21,10 @@ case 2:
     print(wines[0] + wines[1])
     
 default:
+    // n번째 포도주를 볼때
+    // O X O -> n-2번째와 n번째의 포도주 시식
+    // X O O -> n-1번째와 n번째의 포도주 시식
+    // O O X -> n-2번째와 n-1번째의 포도주 시식
     maxAmounts[0] = wines[0]
     maxAmounts[1] = wines[0] + wines[1]
     maxAmounts[2] = max(wines[1] + wines[0], wines[2] + wines[0], wines[2] + wines[1])
