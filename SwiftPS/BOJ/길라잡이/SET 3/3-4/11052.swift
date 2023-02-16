@@ -8,10 +8,9 @@
 /// 11052 카드 구매하기
 
 let N = Int(readLine()!)!
-var P = readLine()!.split(separator: " ").map { Int($0)! }
+var P = [0] + readLine()!.split(separator: " ").map { Int($0)! }
 var DP: [Int] = Array(repeating: 0, count: N+1)
 
-P.insert(0, at: 0)
 DP[1] = P[1]
 
 for i in 2...N {
