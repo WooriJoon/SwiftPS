@@ -1,11 +1,11 @@
 //
-//  main.swift
+//  1826.swift
 //  SwiftPS
 //
-//  Created by WooriJoon on 2022/05/15.
+//  Created by WooriJoon on 2023/03/02.
 //
 
-import Foundation
+/// 1826 연료 채우기
 
 struct MinHeap<T: Comparable> {
     var heap: [T] = []
@@ -107,3 +107,45 @@ struct MinHeap<T: Comparable> {
         }
     }
 }
+
+let N = Int(readLine()!)!
+var info: [(distance: Int, amount: Int)] = []
+for _ in 0..<N {
+    let input = readLine()!.split(separator: " ").map { Int($0)! }
+    info.append((input[0], input[1]))
+}
+let LP = readLine()!.split(separator: " ").map { Int($0)! }
+let L = LP[0]
+var P = LP[1]
+
+info.sort(by: { $0.distance < $1.distance })
+// 도착할 위치를 추가하여 마지막까지 연료 검사
+info.append((L, -1))
+
+var maxHeap: MinHeap<Int> = MinHeap()
+var fuel = P    // 현재 남은 연료
+var index: Int = 0  // 현재 몇번째 주유소인지 가리킬 인덱스
+var count: Int = 0  // 주유소 들른 횟수
+
+// 마을에 도착할 때까지 반복
+while fuel < L {
+    // 들를 주유소가 있고 && 현재 연료로 다음 주유소로 갈 수 있다면 반복
+    while index < N && info[index].distance <= fuel {
+        maxHeap.insert(-info[index].amount)
+        index += 1
+    }
+    
+    // 힙이 비어있을때(남은 연료로 갈 수 있는 주유소가 없다면) 처리
+    guard maxHeap.count() > 1 else {
+        count = -1
+        break
+    }
+    
+    // 연료의 양이 가장 많았던 주유소부터 연료 채움
+    count += 1
+    fuel += -maxHeap.pop()!
+}
+
+print(count)
+
+/// 링크: https://www.acmicpc.net/problem/1826
